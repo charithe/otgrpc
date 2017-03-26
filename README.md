@@ -1,5 +1,5 @@
-gRPC Opentracing Interceptors For Golang
-========================================
+Go gRPC Opentracing Instrumentation
+===================================
 
 [![GoDoc](https://godoc.org/github.com/charithe/otgrpc?status.svg)](https://godoc.org/github.com/charithe/otgrpc)
 
