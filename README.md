@@ -1,6 +1,8 @@
 gRPC Opentracing Interceptors For Golang
 ========================================
 
+[![GoDoc](https://godoc.org/github.com/charithe/otgrpc?status.svg)](https://godoc.org/github.com/charithe/otgrpc)
+
 An attempt to use [Opentracing](http://opentracing.io/) with [gRPC](http://grpc.io) services. The official
 [grpc-opentracing](https://github.com/grpc-ecosystem/grpc-opentracing) library currently only supports tracing
 unary calls. This library makes use of gRPC `stats.Handler` interface to add tracing to gRPC streams as well.
