@@ -1,0 +1,19 @@
+syntax = "proto3";
+package test;
+
+message TestRequest {
+    string request = 1;
+}
+
+message TestResponse {
+    string response = 1;
+}
+
+service TestSvc {
+    rpc UnaryRPC (TestRequest) returns (TestResponse) {}
+    rpc ClientStreamRPC (stream TestRequest) returns (TestResponse) {}
+    rpc ServerStreamRPC (TestRequest) returns (stream TestResponse) {}
+    rpc BidiStreamRPC (stream TestRequest) returns (stream TestResponse) {}
+}
+
+
