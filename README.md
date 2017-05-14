@@ -15,11 +15,6 @@ the `stats.Handler` interface which is primarily designed for stats gathering bu
 all interesting events that happen during a RPC -- which can be used to gather the tracing information we need. 
 
 
-Please note that currently there's a small bug in the gRPC `stats.Handler` implementation that fails to trigger the `End` 
-event for client streams. I have opened a [pull request](https://github.com/grpc/grpc-go/pull/1140) with the gRPC project to fix this issue. Until it gets merged,
-tracing of client streams will not be accurate.
-
-
 Usage
 -----
 
